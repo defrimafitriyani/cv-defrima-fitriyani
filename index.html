@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae Defrima Fitriyani</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #007BFF;
+            color: white;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 10px;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav button {
+            margin: 0 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        nav button:hover {
+            background: #0056b3;
+        }
+        section {
+            display: none;
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 10px;
+        }
+        .portfolio-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .portfolio-grid img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="foto-profil.jpg" alt="Foto Profil">
+        <h1>Defrima Fitriyani</h1>
+        <p>Email: defrimafitriyani10@gmail.com | Telepon: [Masukkan nomor telepon]</p>
+        <p>Alamat: Perum Bukit Galang Permai</p>
+    </header>
+    <nav>
+        <button onclick="showSection('profil')">Profil</button>
+        <button onclick="showSection('pendidikan')">Pendidikan</button>
+        <button onclick="showSection('pengalaman')">Pengalaman Kerja</button>
+        <button onclick="showSection('keterampilan')">Keterampilan</button>
+        <button onclick="showSection('organisasi')">Pengalaman Organisasi</button>
+        <button onclick="showSection('sertifikasi')">Sertifikasi dan Pelatihan</button>
+        <button onclick="showSection('bahasa')">Bahasa</button>
+        <button onclick="showSection('portofolio')">Portofolio</button>
+    </nav>
+    <section id="profil" style="display: block;">
+        <h2>Profil</h2>
+        <p>Saya adalah individu dengan dedikasi tinggi dan berbagai pengalaman profesional serta kreatif. Terampil dalam pengolahan data organisasi menggunakan Microsoft Word dan Excel untuk memastikan akurasi dan efisiensi. Sebagai model muse Make-Up Artist (MUA), saya telah berkontribusi pada berbagai proyek kreatif yang menggabungkan seni dan estetika. Saat ini, saya sedang membangun karier sebagai konten kreator, berfokus pada inovasi, kreativitas, dan membangun komunitas yang inspiratif melalui media sosial.</p>
+        <h3>Informasi Pribadi</h3>
+        <p>Tanggal Lahir: 10 November 2003</p>
+        <p>Media Sosial: @defrima_fitriyani</p>
+    </section>
+    <section id="pendidikan">
+        <h2>Pendidikan</h2>
+        <ul>
+            <li>TK MUTIARA HATI (2008)</li>
+            <li>SD 006 KUNDUR BARAT (2009 – 2015)</li>
+            <li>MTS UMMUL QURO (2015 – 2018)</li>
+            <li>SMAN 4 KUNDUR (2018 – 2021)</li>
+            <li>S1 Teknik Informatika (Sedang Berjalan) – Universitas Maritim Raja Ali Haji (UMRAH)</li>
+        </ul>
+    </section>
+    <section id="pengalaman">
+        <h2>Pengalaman Kerja</h2>
+        <ul>
+            <li>Data Administrator - Gapoktan | 2023 – Sekarang
+                <ul>
+                    <li>Mengelola dan menganalisis data organisasi dengan presisi tinggi menggunakan Microsoft Excel dan Word.</li>
+                    <li>Menyusun laporan komprehensif untuk mendukung keputusan strategis organisasi.</li>
+                    <li>Mengoptimalkan sistem dokumentasi untuk efisiensi alur kerja.</li>
+                </ul>
+            </li>
+            <li>Model Muse MUA - Freelance | 2024
+                <ul>
+                    <li>Berkolaborasi dengan Make-Up Artist dalam berbagai proyek kreatif untuk mempromosikan konsep makeup inovatif.</li>
+                    <li>Berpartisipasi dalam sesi pemotretan dan acara untuk memperkenalkan tren kecantikan terbaru.</li>
+                    <li>Mendukung kampanye visual melalui media sosial dan platform kreatif.</li>
+                </ul>
+            </li>
+            <li>Konten Kreator (Proses Pengembangan) - Freelance | 2024 – Sekarang
+                <ul>
+                    <li>Membuat konten digital yang menarik untuk media sosial, fokus pada gaya hidup, kecantikan, dan inspirasi harian.</li>
+                    <li>Merancang strategi konten untuk meningkatkan keterlibatan audiens.</li>
+                    <li>Mengelola interaksi dengan audiens untuk membangun komunitas yang positif.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section id="keterampilan">
+        <h2>Keterampilan</h2>
+        <ul>
+            <li>Teknis: Microsoft Word, Excel, Google Workspace.</li>
+            <li>Kreatif: Fotografi, modeling, produksi konten visual.</li>
+            <li>Komunikasi: Presentasi efektif dan manajemen media sosial.</li>
+            <li>Organisasi: Penyusunan laporan, analisis data, dan manajemen dokumen.</li>
+            <li>Adaptasi: Kemampuan belajar cepat dan fleksibilitas tinggi.</li>
+            <li>Manajemen Waktu: Kemampuan mengelola berbagai tugas secara efisien.</li>
+        </ul>
+    </section>
+    <section id="organisasi">
+        <h2>Pengalaman Organisasi</h2>
+        <ul>
+            <li>Tari Tradisional (2009 – 2016): Berpartisipasi dalam pertunjukan seni budaya tingkat sekolah dan desa.</li>
+            <li>Pramuka (2016 – 2019): Mengikuti kegiatan kepanduan, kemping, dan pelatihan kepemimpinan.</li>
+            <li>Drum Band (2017 – 2018): Berpartisipasi dalam pertunjukan musik tingkat kecamatan.</li>
+            <li>Mading Sekolah (2021 – 2022): Mengelola konten kreatif untuk majalah dinding sekolah.</li>
+            <li>PMR (Palang Merah Remaja) (2020 – 2022): Aktif dalam kegiatan sosial, pelatihan kesehatan, dan donasi kemanusiaan.</li>
+            <li>Komunitas Digital Kreator (2023 – Sekarang): Berkontribusi dalam diskusi dan kolaborasi proyek konten kreatif.</li>
+        </ul>
+    </section>
+    <section id="sertifikasi">
+        <h2>Sertifikasi dan Pelatihan</h2>
+        <ul>
+            <li>Pelatihan Microsoft Office: Sertifikasi penggunaan Microsoft Word dan Excel secara profesional.</li>
+            <li>Kreativitas Digital: Kursus online dalam pembuatan konten media sosial.</li>
+            <li>Pelatihan Kepemimpinan Pramuka: Mengembangkan keterampilan organisasi dan kepemimpinan.</li>
+        </ul>
+    </section>
+    <section id="bahasa">
+        <h2>Bahasa</h2>
+        <ul>
+            <li>Bahasa Indonesia: Fasih (Lisan dan Tulisan).</li>
+            <li>Bahasa Inggris: Menengah (Komunikasi dan Penulisan Dasar).</li>
+            <li>Bahasa Melayu: Dasar (Komunikasi Sehari-hari).</li>
+        </ul>
+    </section>
+    <section id="portofolio">
+        <h2>Portofolio</h2>
+        <div class="portfolio-grid">
+            <img src="gambar1.jpg" alt="Proyek Gambar 1">
+            <img src="gambar2.jpg" alt="Proyek Gambar 2">
+            <img src="gambar3.jpg" alt="Proyek Gambar 3">
+            <img src="gambar4.jpg" alt="Proyek Gambar 4">
+            <img src="gambar5.jpg" alt="Proyek Gambar 5">
+        </div>
+    </section>
+</body>
+</html>
